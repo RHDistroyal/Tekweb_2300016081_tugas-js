@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Serif&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>To-Do List</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-800 p-4 fixed bottom-0 w-full">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="index.html" class="text-white hover:text-yellow-300">Home</a></li>
+            <li><a href="todo.html" class="text-white hover:text-yellow-300">To-Do List</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-md sans-serif">
+        <h2 class="text-2xl font-bold mb-4">To-Do List</h2>
+        <div class="mb-4">
+            <input type="text" id="new-task" placeholder="Enter a new task..." class="border border-gray-300 p-2 rounded w-full" />
+        </div>
+        <div class="mb-6">
+            <button id="add-task" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Add Task</button>
+        </div>
+        <ul id="task-list" class="list-disc pl-5"></ul>
+    </div>
+
+    <script src="scripts/todo.js"></script>
+</body>
+</html>
